@@ -1,0 +1,2018 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.3' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     81635,       2010]
+NotebookOptionsPosition[     75443,       1930]
+NotebookOutlinePosition[     75798,       1946]
+CellTagsIndexPosition[     75755,       1943]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"t0", " ", "=", " ", "0.42"}], ";", "\[IndentingNewLine]", 
+    RowBox[{"t1", " ", "=", " ", 
+     RowBox[{"2.7", "*", "t0"}]}], ";", "\[IndentingNewLine]", 
+    RowBox[{"t2", " ", "=", " ", 
+     RowBox[{"0.7", "*", "t0"}]}], ";"}], "*)"}],
+  FontSize->16]], "Input",ExpressionUUID->"ad005c20-ae37-4a1b-9fcc-\
+61124aeafea6"],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  RowBox[{
+   StyleBox[
+    RowBox[{
+     RowBox[{"kS", " ", "=", " ", "2.3"}], ";"}],
+    FontSize->24], "\[IndentingNewLine]", 
+   StyleBox[
+    RowBox[{
+     RowBox[{"eS", " ", "=", " ", "0.47"}], ";"}],
+    FontSize->24], "\[IndentingNewLine]", 
+   StyleBox[
+    RowBox[{"Grid", "[", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{
+          StyleBox["Manipulate",
+           FontSize->24], 
+          StyleBox["[",
+           FontSize->24], 
+          RowBox[{
+           RowBox[{
+            StyleBox["Plot",
+             FontSize->24], 
+            StyleBox["[",
+             FontSize->24], 
+            RowBox[{
+             RowBox[{
+              StyleBox["Sqrt",
+               FontSize->24], 
+              StyleBox["[",
+               FontSize->24], 
+              StyleBox[
+               RowBox[{
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  RowBox[{"ComplexExpand", "[", 
+                   RowBox[{"Re", "[", 
+                    FractionBox["k", 
+                    RowBox[{
+                    RowBox[{"I", "*", "w", "*", "T"}], "+", "1"}]], "]"}], 
+                   "]"}], ")"}], "2"], "+", 
+                SuperscriptBox[
+                 RowBox[{"(", 
+                  StyleBox[
+                   RowBox[{"ComplexExpand", "[", 
+                    RowBox[{"Im", "[", 
+                    FractionBox["k", 
+                    RowBox[{
+                    RowBox[{"I", "*", "w", "*", "T"}], "+", "1"}]], "]"}], 
+                    "]"}],
+                   FontSize->14], ")"}], "2"]}],
+               FontSize->18], 
+              StyleBox["]",
+               FontSize->24]}], 
+             StyleBox[",",
+              FontSize->24], 
+             StyleBox[
+              RowBox[{"{", 
+               RowBox[{"w", ",", "0", ",", "20"}], "}"}],
+              FontSize->24]}], 
+            StyleBox["]",
+             FontSize->24]}], 
+           StyleBox[",",
+            FontSize->24], 
+           StyleBox[
+            RowBox[{"{", 
+             RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}],
+            FontSize->24], 
+           StyleBox[",",
+            FontSize->24], 
+           StyleBox[
+            RowBox[{"{", 
+             RowBox[{"k", ",", 
+              RowBox[{"kS", "/", "2"}], ",", 
+              RowBox[{"2", "*", "kS"}]}], "}"}],
+            FontSize->24]}], 
+          StyleBox["]",
+           FontSize->24]}], ",", 
+         StyleBox[
+          RowBox[{"Manipulate", "[", 
+           RowBox[{
+            RowBox[{"Plot", "[", 
+             RowBox[{
+              RowBox[{"ArcTan", "[", 
+               FractionBox[
+                RowBox[{"ComplexExpand", "[", 
+                 RowBox[{"Im", "[", 
+                  FractionBox["k", 
+                   RowBox[{
+                    RowBox[{"I", "*", "w", "*", "T"}], "+", "1"}]], "]"}], 
+                 "]"}], 
+                RowBox[{"ComplexExpand", "[", 
+                 RowBox[{"Re", "[", 
+                  FractionBox["k", 
+                   RowBox[{
+                    RowBox[{"I", "*", "w", "*", "T"}], "+", "1"}]], "]"}], 
+                 "]"}]], "]"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"w", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"k", ",", 
+              RowBox[{"kS", "/", "2"}], ",", 
+              RowBox[{"2", "*", "kS"}]}], "}"}]}], "]"}],
+          FontSize->24]}], "}"}], "}"}], ",", " ", 
+      RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}],
+    FontSize->24]}]}]], "Input",
+ CellChangeTimes->{{3.761367794591113*^9, 3.761367925712619*^9}, {
+  3.761367968754932*^9, 3.761367972082367*^9}},
+ CellLabel->"In[28]:=",ExpressionUUID->"f056d42e-c29d-4afc-a5d0-523bea5f1c96"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[GridBox[{
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 
+         2.3000000000000007`, $CellContext`T$$ = 0.42, Typeset`show$$ = True, 
+         Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+         Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+         "\"untitled\"", Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {109., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$8387$$ = 
+         0, $CellContext`k$8388$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`k$$ = 1.15, $CellContext`T$$ = 0.294},
+            "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$8387$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$8388$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             Sqrt[ComplexExpand[
+                 
+                 Re[$CellContext`k$$/((I $CellContext`w) $CellContext`T$$ + 
+                  1)]]^2 + ComplexExpand[
+                 
+                 Im[$CellContext`k$$/((I $CellContext`w) $CellContext`T$$ + 
+                  1)]]^2], {$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}}, "Options" :> {}, 
+           "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {168., 174.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]], 
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 
+         2.3000000000000007`, $CellContext`T$$ = 0.41999999999999993`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {107., 112.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$8407$$ = 
+         0, $CellContext`k$8408$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`k$$ = 1.15, $CellContext`T$$ = 0.294},
+            "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$8407$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$8408$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             ArcTan[ComplexExpand[
+                
+                Im[$CellContext`k$$/((I $CellContext`w) $CellContext`T$$ + 
+                 1)]]/ComplexExpand[
+               
+               Re[$CellContext`k$$/((I $CellContext`w) $CellContext`T$$ + 
+                1)]]], {$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}}, "Options" :> {}, 
+           "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {166., 172.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    AutoDelete->False,
+    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], 
+  RowBox[{"(*", 
+   RowBox[{
+   "\:0410\:043f\:0435\:0440\:0456\:043e\:0434\:0438\:0447\:043d\:0430", " ", 
+    "\:043b\:0430\:043d\:043a\:0430"}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7613746937975473`*^9, 3.761374717892996*^9}, {
+  3.761374759443366*^9, 
+  3.761374764703156*^9}},ExpressionUUID->"49f7b119-129f-4f0d-9d6d-\
+2a929579094e"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        StyleBox["Manipulate",
+         FontSize->24], 
+        StyleBox["[",
+         FontSize->24], 
+        RowBox[{
+         RowBox[{
+          StyleBox["Plot",
+           FontSize->24], 
+          StyleBox["[",
+           FontSize->24], 
+          RowBox[{
+           RowBox[{
+            StyleBox["Sqrt",
+             FontSize->24], 
+            StyleBox["[",
+             FontSize->24], 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{
+               StyleBox["(",
+                FontSize->14], 
+               StyleBox[
+                RowBox[{"ComplexExpand", "[", 
+                 RowBox[{"Re", "[", 
+                  FractionBox["k", 
+                   RowBox[{"I", "*", "w"}]], "]"}], "]"}],
+                FontSize->24], 
+               StyleBox[")",
+                FontSize->14]}], "2"], 
+             StyleBox["+",
+              FontSize->24], 
+             SuperscriptBox[
+              RowBox[{"(", 
+               StyleBox[
+                RowBox[{"ComplexExpand", "[", 
+                 RowBox[{"Im", "[", 
+                  FractionBox["k", 
+                   RowBox[{"I", "*", "w"}]], "]"}], "]"}],
+                FontSize->24], ")"}], "2"]}], 
+            StyleBox["]",
+             FontSize->24]}], 
+           StyleBox[",",
+            FontSize->24], 
+           StyleBox[
+            RowBox[{"{", 
+             RowBox[{"w", ",", "0", ",", "20"}], "}"}],
+            FontSize->24]}], 
+          StyleBox["]",
+           FontSize->24]}], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}],
+          FontSize->24]}], 
+        StyleBox["]",
+         FontSize->24]}], 
+       StyleBox[",",
+        FontSize->24], 
+       StyleBox[
+        RowBox[{"Manipulate", "[", 
+         RowBox[{
+          RowBox[{"Plot", "[", 
+           RowBox[{
+            RowBox[{"ArcTan", "[", 
+             FractionBox[
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Im", "[", 
+                FractionBox["k", 
+                 RowBox[{"I", "*", "w"}]], "]"}], "]"}], 
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Re", "[", 
+                FractionBox["k", 
+                 RowBox[{"I", "*", "w"}]], "]"}], "]"}]], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"w", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}]}], "]"}],
+        FontSize->24]}], "}"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}],
+  FontSize->24]], "Input",
+ CellChangeTimes->{{3.761368030475933*^9, 3.761368055426042*^9}},
+ CellLabel->"In[31]:=",ExpressionUUID->"7d438e48-a552-4713-95a2-fccac637c85e"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[GridBox[{
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 2.3000000000000007`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {109., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`k$8939$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, "Variables" :> {$CellContext`k$$ = 1.15}, 
+           "ControllerVariables" :> {
+             Hold[$CellContext`k$$, $CellContext`k$8939$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             Sqrt[ComplexExpand[
+                 Re[$CellContext`k$$/(I $CellContext`w)]]^2 + ComplexExpand[
+                 Im[$CellContext`k$$/(I $CellContext`w)]]^2], {$CellContext`w,
+               0, 20}], "Specifications" :> {{$CellContext`k$$, 1.15, 4.6}}, 
+           "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {154., 160.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]], 
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 1.15, Typeset`show$$ = True, 
+         Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+         Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+         "\"untitled\"", Typeset`specs$$ = {{
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {105., 109.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`k$8956$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, "Variables" :> {$CellContext`k$$ = 1.15}, 
+           "ControllerVariables" :> {
+             Hold[$CellContext`k$$, $CellContext`k$8956$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             ArcTan[ComplexExpand[
+                Im[$CellContext`k$$/(I $CellContext`w)]]/ComplexExpand[
+               Re[$CellContext`k$$/(I $CellContext`w)]]], {$CellContext`w, 0, 
+              20}], "Specifications" :> {{$CellContext`k$$, 1.15, 4.6}}, 
+           "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {150., 156.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    AutoDelete->False,
+    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], 
+  RowBox[{"(*", 
+   RowBox[{
+   "\:0406\:043d\:0442\:0435\:0433\:0440\:0430\:043b\:044c\:043d\:0430", " ", 
+    "\:043b\:0430\:043d\:043a\:0430"}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.761374721863014*^9, 
+  3.761374755836735*^9}},ExpressionUUID->"5c0723df-0894-4fc0-9ee8-\
+307fbaa2f870"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,32,23,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613680588999557`*^9},
+ CellLabel->"",ExpressionUUID->"d22824f2-5006-48f1-bc02-36b6d1cc7e73"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,32,24,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368058932857*^9},
+ CellLabel->"",ExpressionUUID->"736b0c87-61f0-46f1-b70a-37085a60dc09"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,32,25,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368058954158*^9},
+ CellLabel->"",ExpressionUUID->"d2fa8fab-bf0d-43ea-9761-15a1d221684a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,32,26,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368058975903*^9},
+ CellLabel->"",ExpressionUUID->"28e0d0db-baac-4a0a-b194-a643cd3abeb2"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,39,51,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613686192510433`*^9},
+ CellLabel->"",ExpressionUUID->"e949c6c3-c3a0-44e2-ab7a-492aba46897f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,39,52,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368619271646*^9},
+ CellLabel->"",ExpressionUUID->"74e890a2-4266-40e0-8210-40d55497c186"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,39,53,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368619292634*^9},
+ CellLabel->"",ExpressionUUID->"dd0e435e-6d32-4b6e-8626-209a18093d3d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,39,54,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613686193144827`*^9},
+ CellLabel->"",ExpressionUUID->"48b6cba6-a348-4d60-8992-7b4eefb1ae26"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,1,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613746418835497`*^9},
+ CellLabel->"",ExpressionUUID->"75acb5b0-4e48-47c7-bc96-fcb8ffb9dacc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,2,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374641934211*^9},
+ CellLabel->"",ExpressionUUID->"5a430d5b-f641-408c-94a0-af8ccb838106"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,3,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374722299028*^9},
+ CellLabel->"",ExpressionUUID->"56513539-4200-465d-a636-c88607ca8e38"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,4,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374722322723*^9},
+ CellLabel->"",ExpressionUUID->"c07a2c04-27a3-4d99-a746-0a7dd405d4c0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,5,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374722343877*^9},
+ CellLabel->"",ExpressionUUID->"efd69476-32ca-4424-85fe-f4804ae22808"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,1,6,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613747223493567`*^9},
+ CellLabel->"",ExpressionUUID->"c92acff8-8f0e-4d41-adee-6a028fd2631d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,15,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613759495876427`*^9},
+ CellLabel->"",ExpressionUUID->"0604c3f2-013d-4518-bcd3-72c45c89510d"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,16,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375949621538*^9},
+ CellLabel->"",ExpressionUUID->"9ed2b464-9535-45d5-93ab-d5f864b6b606"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,17,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375949688479*^9},
+ CellLabel->"",ExpressionUUID->"ca3fe5a2-7fff-44b0-93d7-071e26b38fd7"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,1,18,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375949722723*^9},
+ CellLabel->"",ExpressionUUID->"3b943580-d421-4b29-bbe2-8fa8c1680364"]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        StyleBox["Manipulate",
+         FontSize->24], 
+        StyleBox["[",
+         FontSize->24], 
+        RowBox[{
+         RowBox[{
+          StyleBox["Plot",
+           FontSize->24], 
+          StyleBox["[",
+           FontSize->24], 
+          RowBox[{
+           RowBox[{
+            StyleBox["Sqrt",
+             FontSize->24], 
+            StyleBox["[",
+             FontSize->24], 
+            RowBox[{
+             SuperscriptBox[
+              RowBox[{
+               StyleBox["(",
+                FontSize->14], 
+               StyleBox[
+                RowBox[{"ComplexExpand", "[", 
+                 RowBox[{"Re", "[", 
+                  RowBox[{"I", "*", "w", "*", "k"}], "]"}], "]"}],
+                FontSize->24], 
+               StyleBox[")",
+                FontSize->14]}], "2"], 
+             StyleBox["+",
+              FontSize->24], 
+             SuperscriptBox[
+              RowBox[{"(", 
+               StyleBox[
+                RowBox[{"ComplexExpand", "[", 
+                 RowBox[{"Im", "[", 
+                  RowBox[{"I", "*", "w", "*", "k"}], "]"}], "]"}],
+                FontSize->24], ")"}], "2"]}], 
+            StyleBox["]",
+             FontSize->24]}], 
+           StyleBox[",",
+            FontSize->24], 
+           StyleBox[
+            RowBox[{"{", 
+             RowBox[{"w", ",", "0", ",", "20"}], "}"}],
+            FontSize->24]}], 
+          StyleBox["]",
+           FontSize->24]}], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}],
+          FontSize->24]}], 
+        StyleBox["]",
+         FontSize->24]}], 
+       StyleBox[",",
+        FontSize->24], 
+       StyleBox[
+        RowBox[{"Manipulate", "[", 
+         RowBox[{
+          RowBox[{"Plot", "[", 
+           RowBox[{
+            RowBox[{"ArcTan", "[", 
+             FractionBox[
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Im", "[", 
+                RowBox[{"I", "*", "w", "*", "k"}], "]"}], "]"}], 
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Re", "[", 
+                RowBox[{"I", "*", "w", "*", "k"}], "]"}], "]"}]], "]"}], ",", 
+            
+            RowBox[{"{", 
+             RowBox[{"w", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}]}], "]"}],
+        FontSize->24]}], "}"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}],
+  FontSize->24]], "Input",
+ CellChangeTimes->{{3.7613681223924923`*^9, 3.761368151802434*^9}},
+ CellLabel->"In[32]:=",ExpressionUUID->"674c511a-1e77-4252-950e-94e43c82fc91"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[GridBox[{
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 2.3000000000000522`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {110., 114.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`k$9925$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, "Variables" :> {$CellContext`k$$ = 1.15}, 
+           "ControllerVariables" :> {
+             Hold[$CellContext`k$$, $CellContext`k$9925$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             Sqrt[ComplexExpand[
+                 Re[(I $CellContext`w) $CellContext`k$$]]^2 + ComplexExpand[
+                 Im[(I $CellContext`w) $CellContext`k$$]]^2], {$CellContext`w,
+               0, 20}], "Specifications" :> {{$CellContext`k$$, 1.15, 4.6}}, 
+           "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {168., 174.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]], 
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 2.3000000000000522`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {105., 109.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`k$9942$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, "Variables" :> {$CellContext`k$$ = 1.15}, 
+           "ControllerVariables" :> {
+             Hold[$CellContext`k$$, $CellContext`k$9942$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             ArcTan[ComplexExpand[
+                Im[(I $CellContext`w) $CellContext`k$$]]/ComplexExpand[
+               Re[(I $CellContext`w) $CellContext`k$$]]], {$CellContext`w, 0, 
+              20}], "Specifications" :> {{$CellContext`k$$, 1.15, 4.6}}, 
+           "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {163., 169.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    AutoDelete->False,
+    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], 
+  RowBox[{"(*", 
+   RowBox[{
+   "\:0414\:0438\:0444\:0435\:0440\:0435\:043d\:0446\:0456\:0439\:043d\:0430",
+     " ", "\:043b\:0430\:043d\:043a\:0430"}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7613747677107*^9, 3.761374776800823*^9}, 
+   3.7613762349738083`*^9},ExpressionUUID->"b5a31faf-fce8-4302-8a1c-\
+4bca9a36b77f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,33,35,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368154812262*^9},
+ CellLabel->"",ExpressionUUID->"248d983a-8d03-4ab2-b921-09a03c8bbf35"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,33,36,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368154844913*^9},
+ CellLabel->"",ExpressionUUID->"88c80b4b-47a1-4245-8a28-a1787a27071f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,33,37,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368154866118*^9},
+ CellLabel->"",ExpressionUUID->"7444f478-3e47-41de-a3a0-77dbe86fb179"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,33,38,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368154886986*^9},
+ CellLabel->"",ExpressionUUID->"6175a9d8-fae1-4d1f-a959-000ba01f43ed"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,35,39,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368250994822*^9},
+ CellLabel->"",ExpressionUUID->"c656282c-647f-4edd-b5b6-2536c5349c2a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,35,40,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368251026761*^9},
+ CellLabel->"",ExpressionUUID->"29b3287f-af30-4613-9a74-6e735a1fbd44"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,35,41,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613682510476713`*^9},
+ CellLabel->"",ExpressionUUID->"045238d0-cb5f-4d74-b4d4-c3147b4cb631"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,35,42,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368251068295*^9},
+ CellLabel->"",ExpressionUUID->"32d848ea-51d1-4f2d-857f-018153c8d12c"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,36,43,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613682584723377`*^9},
+ CellLabel->"",ExpressionUUID->"f59dc698-1aeb-4828-8f38-e6bd7ce26254"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,36,44,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613682585034523`*^9},
+ CellLabel->"",ExpressionUUID->"33a79e0e-8460-405d-9f4f-4125cc026c17"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,36,45,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368258524053*^9},
+ CellLabel->"",ExpressionUUID->"18561b73-1216-4bf6-9d8a-822b2dbc4d3f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,36,46,15648572508540870395,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761368258545781*^9},
+ CellLabel->"",ExpressionUUID->"614f8068-929e-4c4b-9d49-07f51d9cd1cc"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,7,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.76137472255085*^9},
+ CellLabel->"",ExpressionUUID->"65b5c72b-8c8a-4d59-8503-35a4ff1f5905"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,8,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374722593472*^9},
+ CellLabel->"",ExpressionUUID->"f31cf25b-0e5d-4a54-8c46-8529179de3ef"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,9,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374722622871*^9},
+ CellLabel->"",ExpressionUUID->"313a3f47-b3d6-4d35-9945-212c3f54d349"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,1,10,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374722642391*^9},
+ CellLabel->"",ExpressionUUID->"25d631fa-f501-4e1e-997e-88666c946c14"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,11,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613747680606527`*^9},
+ CellLabel->"",ExpressionUUID->"58d03153-baaf-4437-9827-207aea96aaa3"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,12,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613747680818853`*^9},
+ CellLabel->"",ExpressionUUID->"5773f492-3e94-4d1d-8ff3-c4570684c235"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,13,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613747681668873`*^9},
+ CellLabel->"",ExpressionUUID->"333968a2-ca32-44f5-986c-13a562951a1a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,1,14,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761374768216626*^9},
+ CellLabel->"",ExpressionUUID->"53e74d37-a143-438c-81c2-e5748229a7df"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,19,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375949961738*^9},
+ CellLabel->"",ExpressionUUID->"2156b4d6-11fb-40de-815e-bb324a6c136a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,20,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375950008675*^9},
+ CellLabel->"",ExpressionUUID->"0aedb48b-d76b-4829-a8f5-ac9f38b1541b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,21,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375950032015*^9},
+ CellLabel->"",ExpressionUUID->"cc0b5164-695a-49cd-b025-bc0f6710d1a0"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,1,22,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761375950054071*^9},
+ CellLabel->"",ExpressionUUID->"a057920e-f1db-4d8c-86e3-6139754fa77f"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,25,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761376237091731*^9},
+ CellLabel->"",ExpressionUUID->"d1b47e3a-2890-4fa1-877f-ac0db0c97d96"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,26,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761376237116928*^9},
+ CellLabel->"",ExpressionUUID->"14b2554f-e359-4484-acce-a942ac0526ae"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \\\"0.`\\\"]\\) \
+encountered.\"",2,1,27,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761376237224284*^9},
+ CellLabel->"",ExpressionUUID->"1d720ce9-941d-475d-93b6-8caf0a0ab644"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "General","stop",
+   "\"Further output of \\!\\(\\*StyleBox[RowBox[{\\\"Power\\\", \\\"::\\\", \
+\\\"infy\\\"}], \\\"MessageName\\\"]\\) will be suppressed during this \
+calculation.\"",2,1,28,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761376237256874*^9},
+ CellLabel->"",ExpressionUUID->"5df869b8-50b8-430f-98c3-3ba54fac67ad"]
+}, Open  ]],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        StyleBox["Manipulate",
+         FontSize->24], 
+        StyleBox["[",
+         FontSize->24], 
+        RowBox[{
+         RowBox[{
+          StyleBox["Plot",
+           FontSize->24], 
+          StyleBox["[",
+           FontSize->24], 
+          StyleBox[
+           RowBox[{
+            RowBox[{
+             StyleBox["Sqrt",
+              FontSize->24], 
+             StyleBox["[",
+              FontSize->24], 
+             RowBox[{
+              StyleBox[
+               SuperscriptBox[
+                RowBox[{
+                 StyleBox["(",
+                  FontSize->14], 
+                 StyleBox[
+                  RowBox[{"ComplexExpand", "[", 
+                   RowBox[{"Re", "[", 
+                    FractionBox["k", 
+                    RowBox[{"1", "-", 
+                    RowBox[{
+                    SuperscriptBox["w", "2"], "*", 
+                    SuperscriptBox["T", "2"]}], "+", 
+                    RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}]}]], 
+                    "]"}], "]"}],
+                  FontSize->24], 
+                 StyleBox[")",
+                  FontSize->14]}], "2"],
+               FontSize->18], 
+              StyleBox["+",
+               FontSize->24], 
+              StyleBox[
+               SuperscriptBox[
+                RowBox[{
+                 StyleBox["(",
+                  FontSize->14], 
+                 StyleBox[
+                  RowBox[{"ComplexExpand", "[", 
+                   RowBox[{"Im", "[", 
+                    FractionBox["k", 
+                    RowBox[{"1", "-", 
+                    RowBox[{
+                    SuperscriptBox["w", "2"], "*", 
+                    SuperscriptBox["T", "2"]}], "+", 
+                    RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}]}]], 
+                    "]"}], "]"}],
+                  FontSize->24], 
+                 StyleBox[")",
+                  FontSize->14]}], "2"],
+               FontSize->18]}], 
+             StyleBox["]",
+              FontSize->24]}], 
+            StyleBox[",",
+             FontSize->24], 
+            StyleBox[
+             RowBox[{"{", 
+              RowBox[{"w", ",", "0", ",", "20"}], "}"}],
+             FontSize->24]}],
+           FontSize->10], 
+          StyleBox["]",
+           FontSize->24]}], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}],
+          FontSize->24], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}],
+          FontSize->24], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"e", ",", 
+            RowBox[{"eS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "eS"}]}], "}"}],
+          FontSize->24]}], 
+        StyleBox["]",
+         FontSize->24]}], 
+       StyleBox[",",
+        FontSize->24], 
+       StyleBox[
+        RowBox[{"Manipulate", "[", 
+         RowBox[{
+          RowBox[{"Plot", "[", 
+           RowBox[{
+            RowBox[{"ArcTan", "[", 
+             FractionBox[
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Im", "[", 
+                FractionBox["k", 
+                 RowBox[{"1", "-", 
+                  RowBox[{
+                   SuperscriptBox["w", "2"], "*", 
+                   SuperscriptBox["T", "2"]}], "+", 
+                  RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}]}]], 
+                "]"}], "]"}], 
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Re", "[", 
+                FractionBox["k", 
+                 RowBox[{"1", "-", 
+                  RowBox[{
+                   SuperscriptBox["w", "2"], "*", 
+                   SuperscriptBox["T", "2"]}], "+", 
+                  RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}]}]], 
+                "]"}], "]"}]], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"w", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"e", ",", 
+            RowBox[{"eS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "eS"}]}], "}"}]}], "]"}],
+        FontSize->24]}], "}"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}],
+  FontSize->24]], "Input",
+ CellChangeTimes->{{3.7613681778370323`*^9, 3.761368198456057*^9}},
+ CellLabel->"In[33]:=",ExpressionUUID->"b70d640d-c102-4975-a5d1-2aa053c25247"],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[GridBox[{
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`e$$ = 
+         0.46999999999999464`, $CellContext`k$$ = 2.3, $CellContext`T$$ = 
+         0.41999999999999993`, Typeset`show$$ = True, 
+         Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+         Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+         "\"untitled\"", Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}, {
+           Hold[$CellContext`e$$], 0.235, 0.94}}, Typeset`size$$ = {
+         360., {109., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$10621$$ = 
+         0, $CellContext`k$10622$$ = 0, $CellContext`e$10623$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`e$$ = 0.235, $CellContext`k$$ = 
+             1.15, $CellContext`T$$ = 0.294}, "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$10621$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$10622$$, 0], 
+             Hold[$CellContext`e$$, $CellContext`e$10623$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             Sqrt[ComplexExpand[
+                 
+                 Re[$CellContext`k$$/(
+                  1 - $CellContext`w^2 $CellContext`T$$^2 + (((
+                    I $CellContext`w) 
+                    2) $CellContext`e$$) $CellContext`T$$)]]^2 + ComplexExpand[
+                 
+                 Im[$CellContext`k$$/(
+                  1 - $CellContext`w^2 $CellContext`T$$^2 + (((
+                    I $CellContext`w) 
+                    2) $CellContext`e$$) $CellContext`T$$)]]^2], \
+{$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}, {$CellContext`e$$, 0.235,
+               0.94}}, "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {222., 228.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]], 
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`e$$ = 
+         0.46999999999999464`, $CellContext`k$$ = 
+         2.2999999999999736`, $CellContext`T$$ = 0.41999999999999993`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}, {
+           Hold[$CellContext`e$$], 0.235, 0.94}}, Typeset`size$$ = {
+         360., {105., 109.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$10644$$ = 
+         0, $CellContext`k$10645$$ = 0, $CellContext`e$10646$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`e$$ = 0.235, $CellContext`k$$ = 
+             1.15, $CellContext`T$$ = 0.294}, "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$10644$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$10645$$, 0], 
+             Hold[$CellContext`e$$, $CellContext`e$10646$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             ArcTan[ComplexExpand[
+                Im[$CellContext`k$$/(
+                 1 - $CellContext`w^2 $CellContext`T$$^2 + (((
+                    I $CellContext`w) 
+                    2) $CellContext`e$$) $CellContext`T$$)]]/ComplexExpand[
+               
+               Re[$CellContext`k$$/(
+                1 - $CellContext`w^2 $CellContext`T$$^2 + (((I $CellContext`w)
+                     2) $CellContext`e$$) $CellContext`T$$)]]], \
+{$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}, {$CellContext`e$$, 0.235,
+               0.94}}, "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {218., 224.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    AutoDelete->False,
+    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], 
+  RowBox[{"(*", 
+   RowBox[{
+   "\:041a\:043e\:043b\:0438\:0432\:0430\:043b\:044c\:043d\:0430", " ", 
+    "\:043b\:0430\:043d\:043a\:0430"}], "*)"}]}]], "Input",
+ CellChangeTimes->{{3.761368224864008*^9, 3.761368301614051*^9}, {
+   3.76137478079665*^9, 3.761374788526813*^9}, 
+   3.761375964664418*^9},ExpressionUUID->"fbf59f76-c523-4ac6-9b36-\
+4e8364e2d956"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \
+RowBox[{RowBox[{\\\"0.`\\\", \\\"\[VeryThinSpace]\\\"}], \\\"+\\\", \
+RowBox[{\\\"0.`\\\", \\\" \\\", \\\"\[ImaginaryI]\\\"}]}]]\\) encountered.\"",
+   2,1,23,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.7613760012791653`*^9},
+ CellLabel->"",ExpressionUUID->"c1cbb38a-156a-48de-b318-87c9205d8c4b"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Power","infy",
+   "\"Infinite expression \\!\\(\\*FractionBox[\\\"1\\\", \
+RowBox[{RowBox[{\\\"0.`\\\", \\\"\[VeryThinSpace]\\\"}], \\\"+\\\", \
+RowBox[{\\\"0.`\\\", \\\" \\\", \\\"\[ImaginaryI]\\\"}]}]]\\) encountered.\"",
+   2,1,24,15648619098076312339,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.761376001302299*^9},
+ CellLabel->"",ExpressionUUID->"ea4c3744-f578-43b8-97f3-7565ac93fff9"]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"\[IndentingNewLine]", 
+  StyleBox[
+   RowBox[{"Grid", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{
+         StyleBox["Manipulate",
+          FontSize->24], 
+         StyleBox["[",
+          FontSize->24], 
+         RowBox[{
+          RowBox[{
+           StyleBox["Plot",
+            FontSize->24], 
+           StyleBox["[",
+            FontSize->24], 
+           RowBox[{
+            RowBox[{
+             StyleBox["Sqrt",
+              FontSize->24], 
+             StyleBox["[",
+              FontSize->24], 
+             RowBox[{
+              SuperscriptBox[
+               RowBox[{
+                StyleBox["(",
+                 FontSize->14], 
+                StyleBox[
+                 RowBox[{"ComplexExpand", "[", 
+                  RowBox[{"Re", "[", 
+                   RowBox[{"k", "*", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"I", "*", "w", "*", "T"}]}], ")"}]}], "]"}], "]"}],
+                 FontSize->24], 
+                StyleBox[")",
+                 FontSize->14]}], "2"], 
+              StyleBox["+",
+               FontSize->24], 
+              SuperscriptBox[
+               RowBox[{
+                StyleBox["(",
+                 FontSize->14], 
+                StyleBox[
+                 RowBox[{"ComplexExpand", "[", 
+                  RowBox[{"Im", "[", 
+                   RowBox[{"k", "*", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"I", "*", "w", "*", "T"}]}], ")"}]}], "]"}], "]"}],
+                 FontSize->24], 
+                StyleBox[")",
+                 FontSize->14]}], "2"]}], 
+             StyleBox["]",
+              FontSize->24]}], 
+            StyleBox[",",
+             FontSize->24], 
+            StyleBox[
+             RowBox[{"{", 
+              RowBox[{"w", ",", "0", ",", "20"}], "}"}],
+             FontSize->24]}], 
+           StyleBox["]",
+            FontSize->24]}], 
+          StyleBox[",",
+           FontSize->24], 
+          StyleBox[
+           RowBox[{"{", 
+            RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}],
+           FontSize->24], 
+          StyleBox[",",
+           FontSize->24], 
+          StyleBox[
+           RowBox[{"{", 
+            RowBox[{"k", ",", 
+             RowBox[{"kS", "/", "2"}], ",", 
+             RowBox[{"2", "*", "kS"}]}], "}"}],
+           FontSize->24]}], 
+         StyleBox["]",
+          FontSize->24]}], 
+        StyleBox[",",
+         FontSize->24], 
+        StyleBox[
+         RowBox[{"Manipulate", "[", 
+          RowBox[{
+           RowBox[{"Plot", "[", 
+            RowBox[{
+             RowBox[{"ArcTan", "[", 
+              FractionBox[
+               RowBox[{"ComplexExpand", "[", 
+                RowBox[{"Im", "[", 
+                 RowBox[{"k", "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", 
+                    RowBox[{"I", "*", "w", "*", "T"}]}], ")"}]}], "]"}], 
+                "]"}], 
+               RowBox[{"ComplexExpand", "[", 
+                RowBox[{"Re", "[", 
+                 RowBox[{"k", "*", 
+                  RowBox[{"(", 
+                   RowBox[{"1", "+", 
+                    RowBox[{"I", "*", "w", "*", "T"}]}], ")"}]}], "]"}], 
+                "]"}]], "]"}], ",", 
+             RowBox[{"{", 
+              RowBox[{"w", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"k", ",", 
+             RowBox[{"kS", "/", "2"}], ",", 
+             RowBox[{"2", "*", "kS"}]}], "}"}]}], "]"}],
+         FontSize->24]}], "}"}], "}"}], ",", 
+     RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}],
+   FontSize->24]}]], "Input",
+ CellChangeTimes->{{3.7613685276432333`*^9, 3.761368553386923*^9}},
+ CellLabel->"In[37]:=",ExpressionUUID->"e7ee336d-73bb-4a7e-a1e0-c7bd4c5fa127"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[GridBox[{
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 
+         2.3000000000000522`, $CellContext`T$$ = 0.41999999999999993`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {110., 115.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$15494$$ = 
+         0, $CellContext`k$15495$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`k$$ = 1.15, $CellContext`T$$ = 0.294},
+            "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$15494$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$15495$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             Sqrt[ComplexExpand[
+                 
+                 Re[$CellContext`k$$ (
+                   1 + (I $CellContext`w) $CellContext`T$$)]]^2 + 
+              ComplexExpand[
+                 
+                 Im[$CellContext`k$$ (
+                   1 + (I $CellContext`w) $CellContext`T$$)]]^2], \
+{$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}}, "Options" :> {}, 
+           "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {196., 202.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]], 
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`k$$ = 
+         2.3000000000000522`, $CellContext`T$$ = 0.41999999999999993`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}}, Typeset`size$$ = {
+         360., {110., 114.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$15514$$ = 
+         0, $CellContext`k$15515$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`k$$ = 1.15, $CellContext`T$$ = 0.294},
+            "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$15514$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$15515$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             ArcTan[ComplexExpand[
+                
+                Im[$CellContext`k$$ (
+                  1 + (I $CellContext`w) $CellContext`T$$)]]/ComplexExpand[
+               
+               Re[$CellContext`k$$ (
+                 1 + (I $CellContext`w) $CellContext`T$$)]]], {$CellContext`w,
+               0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}}, "Options" :> {}, 
+           "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {196., 202.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    AutoDelete->False,
+    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"\:0424\:043e\:0440\:0441\:0443\:044e\:0447\:0430", " ", "1"}], 
+    "-", 
+    RowBox[{
+    "\:0433\:043e", " ", "\:043f\:043e\:0440\:044f\:0434\:043a\:0443"}]}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.7613747912950974`*^9, 3.761374801289414*^9}, 
+   3.761376028620241*^9, 
+   3.76137622133365*^9},ExpressionUUID->"952da76b-57c4-4348-b1a2-\
+5b422f27ba52"],
+
+Cell[BoxData[
+ StyleBox[
+  RowBox[{"Grid", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{
+        StyleBox["Manipulate",
+         FontSize->16], 
+        StyleBox["[",
+         FontSize->16], 
+        RowBox[{
+         StyleBox[
+          RowBox[{
+           StyleBox["Plot",
+            FontSize->24], 
+           StyleBox["[",
+            FontSize->24], 
+           RowBox[{
+            RowBox[{
+             StyleBox["Sqrt",
+              FontSize->24], 
+             StyleBox["[",
+              FontSize->24], 
+             RowBox[{
+              StyleBox[
+               SuperscriptBox[
+                RowBox[{"(", 
+                 RowBox[{
+                  StyleBox["ComplexExpand",
+                   FontSize->24], 
+                  StyleBox["[",
+                   FontSize->24], 
+                  RowBox[{
+                   StyleBox["Re",
+                    FontSize->24], 
+                   StyleBox["[",
+                    FontSize->24], 
+                   RowBox[{
+                    StyleBox["k",
+                    FontSize->24], 
+                    StyleBox["*",
+                    FontSize->24], 
+                    RowBox[{
+                    StyleBox["(",
+                    FontSize->24], 
+                    RowBox[{
+                    RowBox[{
+                    StyleBox["(",
+                    FontSize->24], 
+                    RowBox[{
+                    StyleBox["1",
+                    FontSize->24], 
+                    StyleBox["-",
+                    FontSize->18], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    StyleBox["w",
+                    FontSize->24], "2"],
+                    FontSize->18], 
+                    StyleBox["*",
+                    FontSize->24], 
+                    StyleBox[
+                    SuperscriptBox["T", "2"],
+                    FontSize->24]}]}], 
+                    StyleBox[")",
+                    FontSize->24]}], 
+                    StyleBox["+",
+                    FontSize->24], 
+                    StyleBox[
+                    RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}],
+                    FontSize->24]}], 
+                    StyleBox[")",
+                    FontSize->24]}]}], 
+                   StyleBox["]",
+                    FontSize->24]}], 
+                  StyleBox["]",
+                   FontSize->24]}], ")"}], "2"],
+               FontSize->18], 
+              StyleBox["+",
+               FontSize->24], 
+              SuperscriptBox[
+               RowBox[{
+                StyleBox["(",
+                 FontSize->14], 
+                StyleBox[
+                 RowBox[{"ComplexExpand", "[", 
+                  RowBox[{"Im", "[", 
+                   RowBox[{"k", "*", 
+                    RowBox[{"(", 
+                    RowBox[{"1", "+", 
+                    RowBox[{"I", "*", "w", "*", "T"}]}], ")"}]}], "]"}], "]"}],
+                 FontSize->24], 
+                StyleBox[")",
+                 FontSize->14]}], "2"]}], 
+             StyleBox["]",
+              FontSize->24]}], 
+            StyleBox[",",
+             FontSize->24], 
+            StyleBox[
+             RowBox[{"{", 
+              RowBox[{"w", ",", "0", ",", "20"}], "}"}],
+             FontSize->24]}], 
+           StyleBox["]",
+            FontSize->24]}],
+          FontSize->16], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}],
+          FontSize->24], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}],
+          FontSize->24], 
+         StyleBox[",",
+          FontSize->24], 
+         StyleBox[
+          RowBox[{"{", 
+           RowBox[{"e", ",", 
+            RowBox[{"eS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "eS"}]}], "}"}],
+          FontSize->24]}], 
+        StyleBox["]",
+         FontSize->16]}], 
+       StyleBox[",",
+        FontSize->16], 
+       StyleBox[
+        RowBox[{"Manipulate", "[", 
+         RowBox[{
+          RowBox[{"Plot", "[", 
+           RowBox[{
+            RowBox[{"ArcTan", "[", 
+             FractionBox[
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Im", "[", 
+                RowBox[{
+                 StyleBox["k",
+                  FontSize->24], 
+                 StyleBox["*",
+                  FontSize->24], 
+                 RowBox[{
+                  StyleBox["(",
+                   FontSize->24], 
+                  RowBox[{
+                   RowBox[{
+                    StyleBox["(",
+                    FontSize->24], 
+                    RowBox[{
+                    StyleBox["1",
+                    FontSize->24], 
+                    StyleBox["-",
+                    FontSize->18], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    StyleBox["w",
+                    FontSize->24], "2"],
+                    FontSize->18], 
+                    StyleBox["*",
+                    FontSize->24], 
+                    StyleBox[
+                    SuperscriptBox["T", "2"],
+                    FontSize->24]}]}], 
+                    StyleBox[")",
+                    FontSize->24]}], 
+                   StyleBox["+",
+                    FontSize->24], 
+                   StyleBox[
+                    RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}],
+                    FontSize->24]}], 
+                  StyleBox[")",
+                   FontSize->24]}]}], "]"}], "]"}], 
+              RowBox[{"ComplexExpand", "[", 
+               RowBox[{"Re", "[", 
+                RowBox[{
+                 StyleBox["k",
+                  FontSize->24], 
+                 StyleBox["*",
+                  FontSize->24], 
+                 RowBox[{
+                  StyleBox["(",
+                   FontSize->24], 
+                  RowBox[{
+                   RowBox[{
+                    StyleBox["(",
+                    FontSize->24], 
+                    RowBox[{
+                    StyleBox["1",
+                    FontSize->24], 
+                    StyleBox["-",
+                    FontSize->18], 
+                    RowBox[{
+                    StyleBox[
+                    SuperscriptBox[
+                    StyleBox["w",
+                    FontSize->24], "2"],
+                    FontSize->18], 
+                    StyleBox["*",
+                    FontSize->24], 
+                    StyleBox[
+                    SuperscriptBox["T", "2"],
+                    FontSize->24]}]}], 
+                    StyleBox[")",
+                    FontSize->24]}], 
+                   StyleBox["+",
+                    FontSize->24], 
+                   StyleBox[
+                    RowBox[{"I", "*", "w", "*", "2", "*", "e", "*", "T"}],
+                    FontSize->24]}], 
+                  StyleBox[")",
+                   FontSize->24]}]}], "]"}], "]"}]], "]"}], ",", 
+            RowBox[{"{", 
+             RowBox[{"w", ",", "0", ",", "20"}], "}"}]}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"T", ",", "0.294", ",", "1.134"}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"kS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "kS"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"e", ",", 
+            RowBox[{"eS", "/", "2"}], ",", 
+            RowBox[{"2", "*", "eS"}]}], "}"}]}], "]"}],
+        FontSize->24]}], "}"}], "}"}], ",", 
+    RowBox[{"Frame", "\[Rule]", "All"}]}], "]"}],
+  FontSize->18]], "Input",
+ CellChangeTimes->{{3.7613685680772943`*^9, 3.761368587962277*^9}},
+ CellLabel->"In[38]:=",ExpressionUUID->"88b99a25-cb9d-4260-a668-ae0a8526910e"],
+
+Cell[BoxData[
+ RowBox[{
+  TagBox[GridBox[{
+     {
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`e$$ = 0.47, $CellContext`k$$ = 
+         2.3000000000000522`, $CellContext`T$$ = 0.407, Typeset`show$$ = True,
+          Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+         Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+         "\"untitled\"", Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}, {
+           Hold[$CellContext`e$$], 0.235, 0.94}}, Typeset`size$$ = {
+         360., {108., 113.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$16019$$ = 
+         0, $CellContext`k$16020$$ = 0, $CellContext`e$16021$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`e$$ = 0.235, $CellContext`k$$ = 
+             1.15, $CellContext`T$$ = 0.294}, "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$16019$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$16020$$, 0], 
+             Hold[$CellContext`e$$, $CellContext`e$16021$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             Sqrt[ComplexExpand[
+                 
+                 Re[$CellContext`k$$ ((
+                    1 - $CellContext`w^2 $CellContext`T$$^2) + (((
+                    I $CellContext`w) 
+                    2) $CellContext`e$$) $CellContext`T$$)]]^2 + ComplexExpand[
+                 
+                 Im[$CellContext`k$$ (
+                   1 + (I $CellContext`w) $CellContext`T$$)]]^2], \
+{$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}, {$CellContext`e$$, 0.235,
+               0.94}}, "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {208., 214.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]], 
+      TagBox[
+       StyleBox[
+        DynamicModuleBox[{$CellContext`e$$ = 0.47, $CellContext`k$$ = 
+         2.3000000000000522`, $CellContext`T$$ = 0.41999999999999993`, 
+         Typeset`show$$ = True, Typeset`bookmarkList$$ = {}, 
+         Typeset`bookmarkMode$$ = "Menu", Typeset`animator$$, 
+         Typeset`animvar$$ = 1, Typeset`name$$ = "\"untitled\"", 
+         Typeset`specs$$ = {{
+           Hold[$CellContext`T$$], 0.294, 1.134}, {
+           Hold[$CellContext`k$$], 1.15, 4.6}, {
+           Hold[$CellContext`e$$], 0.235, 0.94}}, Typeset`size$$ = {
+         360., {107., 112.}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+         Typeset`skipInitDone$$ = True, $CellContext`T$16042$$ = 
+         0, $CellContext`k$16043$$ = 0, $CellContext`e$16044$$ = 0}, 
+         DynamicBox[Manipulate`ManipulateBoxes[
+          1, StandardForm, 
+           "Variables" :> {$CellContext`e$$ = 0.235, $CellContext`k$$ = 
+             1.15, $CellContext`T$$ = 0.294}, "ControllerVariables" :> {
+             Hold[$CellContext`T$$, $CellContext`T$16042$$, 0], 
+             Hold[$CellContext`k$$, $CellContext`k$16043$$, 0], 
+             Hold[$CellContext`e$$, $CellContext`e$16044$$, 0]}, 
+           "OtherVariables" :> {
+            Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+             Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+             Typeset`specs$$, Typeset`size$$, Typeset`update$$, 
+             Typeset`initDone$$, Typeset`skipInitDone$$}, "Body" :> Plot[
+             ArcTan[ComplexExpand[
+                
+                Im[$CellContext`k$$ ((
+                   1 - $CellContext`w^2 $CellContext`T$$^2) + (((
+                    I $CellContext`w) 
+                    2) $CellContext`e$$) $CellContext`T$$)]]/ComplexExpand[
+               
+               Re[$CellContext`k$$ ((
+                  1 - $CellContext`w^2 $CellContext`T$$^2) + (((
+                    I $CellContext`w) 
+                    2) $CellContext`e$$) $CellContext`T$$)]]], \
+{$CellContext`w, 0, 20}], 
+           "Specifications" :> {{$CellContext`T$$, 0.294, 
+              1.134}, {$CellContext`k$$, 1.15, 4.6}, {$CellContext`e$$, 0.235,
+               0.94}}, "Options" :> {}, "DefaultOptions" :> {}],
+          ImageSizeCache->{405., {221., 227.}},
+          SingleEvaluation->True],
+         Deinitialization:>None,
+         DynamicModuleValues:>{},
+         SynchronousInitialization->True,
+         UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+         UnsavedVariables:>{Typeset`initDone$$},
+         UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+        Deployed->True,
+        StripOnInput->False],
+       Manipulate`InterpretManipulate[1]]}
+    },
+    AutoDelete->False,
+    GridBoxFrame->{"Columns" -> {{True}}, "Rows" -> {{True}}},
+    GridBoxItemSize->{"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}],
+   "Grid"], 
+  RowBox[{"(*", 
+   RowBox[{
+    RowBox[{"\:0424\:043e\:0440\:0441\:0443\:044e\:0447\:0430", " ", "2"}], 
+    "-", 
+    RowBox[{
+    "\:0433\:043e", " ", "\:043f\:043e\:0440\:044f\:0434\:043a\:0443"}]}], 
+   "*)"}]}]], "Input",
+ CellChangeTimes->{{3.761374811763019*^9, 3.761374813449442*^9}, 
+   3.761376198994768*^9},ExpressionUUID->"6a9eaa22-5222-4a37-967b-\
+3b13702557c0"]
+},
+WindowSize->{1463, 835},
+WindowMargins->{{Automatic, 93}, {23, Automatic}},
+FrontEndVersion->"11.3 for Mac OS X x86 (32-bit, 64-bit Kernel) (March 5, \
+2018)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 391, 10, 87, "Input",ExpressionUUID->"ad005c20-ae37-4a1b-9fcc-61124aeafea6"],
+Cell[952, 32, 3891, 113, 454, "Input",ExpressionUUID->"f056d42e-c29d-4afc-a5d0-523bea5f1c96"],
+Cell[4846, 147, 5075, 105, 367, "Input",ExpressionUUID->"49f7b119-129f-4f0d-9d6d-2a929579094e"],
+Cell[9924, 254, 3018, 94, 345, "Input",ExpressionUUID->"7d438e48-a552-4713-95a2-fccac637c85e"],
+Cell[CellGroupData[{
+Cell[12967, 352, 4215, 84, 339, "Input",ExpressionUUID->"5c0723df-0894-4fc0-9ee8-307fbaa2f870"],
+Cell[17185, 438, 333, 7, 41, "Message",ExpressionUUID->"d22824f2-5006-48f1-bc02-36b6d1cc7e73"],
+Cell[17521, 447, 331, 7, 41, "Message",ExpressionUUID->"736b0c87-61f0-46f1-b70a-37085a60dc09"],
+Cell[17855, 456, 331, 7, 41, "Message",ExpressionUUID->"d2fa8fab-bf0d-43ea-9761-15a1d221684a"],
+Cell[18189, 465, 409, 8, 24, "Message",ExpressionUUID->"28e0d0db-baac-4a0a-b194-a643cd3abeb2"],
+Cell[18601, 475, 333, 7, 41, "Message",ExpressionUUID->"e949c6c3-c3a0-44e2-ab7a-492aba46897f"],
+Cell[18937, 484, 331, 7, 41, "Message",ExpressionUUID->"74e890a2-4266-40e0-8210-40d55497c186"],
+Cell[19271, 493, 331, 7, 41, "Message",ExpressionUUID->"dd0e435e-6d32-4b6e-8626-209a18093d3d"],
+Cell[19605, 502, 411, 8, 24, "Message",ExpressionUUID->"48b6cba6-a348-4d60-8992-7b4eefb1ae26"],
+Cell[20019, 512, 331, 7, 41, "Message",ExpressionUUID->"75acb5b0-4e48-47c7-bc96-fcb8ffb9dacc"],
+Cell[20353, 521, 329, 7, 41, "Message",ExpressionUUID->"5a430d5b-f641-408c-94a0-af8ccb838106"],
+Cell[20685, 530, 329, 7, 41, "Message",ExpressionUUID->"56513539-4200-465d-a636-c88607ca8e38"],
+Cell[21017, 539, 329, 7, 41, "Message",ExpressionUUID->"c07a2c04-27a3-4d99-a746-0a7dd405d4c0"],
+Cell[21349, 548, 329, 7, 41, "Message",ExpressionUUID->"efd69476-32ca-4424-85fe-f4804ae22808"],
+Cell[21681, 557, 409, 8, 24, "Message",ExpressionUUID->"c92acff8-8f0e-4d41-adee-6a028fd2631d"],
+Cell[22093, 567, 332, 7, 41, "Message",ExpressionUUID->"0604c3f2-013d-4518-bcd3-72c45c89510d"],
+Cell[22428, 576, 330, 7, 41, "Message",ExpressionUUID->"9ed2b464-9535-45d5-93ab-d5f864b6b606"],
+Cell[22761, 585, 330, 7, 41, "Message",ExpressionUUID->"ca3fe5a2-7fff-44b0-93d7-071e26b38fd7"],
+Cell[23094, 594, 408, 8, 24, "Message",ExpressionUUID->"3b943580-d421-4b29-bbe2-8fa8c1680364"]
+}, Open  ]],
+Cell[23517, 605, 2925, 91, 292, "Input",ExpressionUUID->"674c511a-1e77-4252-950e-94e43c82fc91"],
+Cell[CellGroupData[{
+Cell[26467, 700, 4269, 85, 367, "Input",ExpressionUUID->"b5a31faf-fce8-4302-8a1c-4bca9a36b77f"],
+Cell[30739, 787, 331, 7, 41, "Message",ExpressionUUID->"248d983a-8d03-4ab2-b921-09a03c8bbf35"],
+Cell[31073, 796, 331, 7, 41, "Message",ExpressionUUID->"88c80b4b-47a1-4245-8a28-a1787a27071f"],
+Cell[31407, 805, 331, 7, 41, "Message",ExpressionUUID->"7444f478-3e47-41de-a3a0-77dbe86fb179"],
+Cell[31741, 814, 409, 8, 24, "Message",ExpressionUUID->"6175a9d8-fae1-4d1f-a959-000ba01f43ed"],
+Cell[32153, 824, 331, 7, 41, "Message",ExpressionUUID->"c656282c-647f-4edd-b5b6-2536c5349c2a"],
+Cell[32487, 833, 331, 7, 41, "Message",ExpressionUUID->"29b3287f-af30-4613-9a74-6e735a1fbd44"],
+Cell[32821, 842, 333, 7, 41, "Message",ExpressionUUID->"045238d0-cb5f-4d74-b4d4-c3147b4cb631"],
+Cell[33157, 851, 409, 8, 24, "Message",ExpressionUUID->"32d848ea-51d1-4f2d-857f-018153c8d12c"],
+Cell[33569, 861, 333, 7, 41, "Message",ExpressionUUID->"f59dc698-1aeb-4828-8f38-e6bd7ce26254"],
+Cell[33905, 870, 333, 7, 41, "Message",ExpressionUUID->"33a79e0e-8460-405d-9f4f-4125cc026c17"],
+Cell[34241, 879, 331, 7, 41, "Message",ExpressionUUID->"18561b73-1216-4bf6-9d8a-822b2dbc4d3f"],
+Cell[34575, 888, 409, 8, 24, "Message",ExpressionUUID->"614f8068-929e-4c4b-9d49-07f51d9cd1cc"],
+Cell[34987, 898, 328, 7, 41, "Message",ExpressionUUID->"65b5c72b-8c8a-4d59-8503-35a4ff1f5905"],
+Cell[35318, 907, 329, 7, 41, "Message",ExpressionUUID->"f31cf25b-0e5d-4a54-8c46-8529179de3ef"],
+Cell[35650, 916, 329, 7, 41, "Message",ExpressionUUID->"313a3f47-b3d6-4d35-9945-212c3f54d349"],
+Cell[35982, 925, 408, 8, 24, "Message",ExpressionUUID->"25d631fa-f501-4e1e-997e-88666c946c14"],
+Cell[36393, 935, 332, 7, 41, "Message",ExpressionUUID->"58d03153-baaf-4437-9827-207aea96aaa3"],
+Cell[36728, 944, 332, 7, 41, "Message",ExpressionUUID->"5773f492-3e94-4d1d-8ff3-c4570684c235"],
+Cell[37063, 953, 332, 7, 41, "Message",ExpressionUUID->"333968a2-ca32-44f5-986c-13a562951a1a"],
+Cell[37398, 962, 408, 8, 24, "Message",ExpressionUUID->"53e74d37-a143-438c-81c2-e5748229a7df"],
+Cell[37809, 972, 330, 7, 41, "Message",ExpressionUUID->"2156b4d6-11fb-40de-815e-bb324a6c136a"],
+Cell[38142, 981, 330, 7, 41, "Message",ExpressionUUID->"0aedb48b-d76b-4829-a8f5-ac9f38b1541b"],
+Cell[38475, 990, 330, 7, 41, "Message",ExpressionUUID->"cc0b5164-695a-49cd-b025-bc0f6710d1a0"],
+Cell[38808, 999, 408, 8, 24, "Message",ExpressionUUID->"a057920e-f1db-4d8c-86e3-6139754fa77f"],
+Cell[39219, 1009, 330, 7, 41, "Message",ExpressionUUID->"d1b47e3a-2890-4fa1-877f-ac0db0c97d96"],
+Cell[39552, 1018, 330, 7, 41, "Message",ExpressionUUID->"14b2554f-e359-4484-acce-a942ac0526ae"],
+Cell[39885, 1027, 330, 7, 41, "Message",ExpressionUUID->"1d720ce9-941d-475d-93b6-8caf0a0ab644"],
+Cell[40218, 1036, 408, 8, 24, "Message",ExpressionUUID->"5df869b8-50b8-430f-98c3-3ba54fac67ad"]
+}, Open  ]],
+Cell[40641, 1047, 4897, 144, 550, "Input",ExpressionUUID->"b70d640d-c102-4975-a5d1-2aa053c25247"],
+Cell[CellGroupData[{
+Cell[45563, 1195, 5994, 119, 475, "Input",ExpressionUUID->"fbf59f76-c523-4ac6-9b36-4e8364e2d956"],
+Cell[51560, 1316, 452, 9, 41, "Message",ExpressionUUID->"c1cbb38a-156a-48de-b318-87c9205d8c4b"],
+Cell[52015, 1327, 450, 9, 41, "Message",ExpressionUUID->"ea4c3744-f578-43b8-97f3-7565ac93fff9"]
+}, Open  ]],
+Cell[52480, 1339, 3949, 117, 353, "Input",ExpressionUUID->"e7ee336d-73bb-4a7e-a1e0-c7bd4c5fa127"],
+Cell[56432, 1458, 5204, 112, 423, "Input",ExpressionUUID->"952da76b-57c4-4348-b1a2-5b422f27ba52"],
+Cell[61639, 1572, 7889, 235, 423, "Input",ExpressionUUID->"88b99a25-cb9d-4260-a668-ae0a8526910e"],
+Cell[69531, 1809, 5908, 119, 473, "Input",ExpressionUUID->"6a9eaa22-5222-4a37-967b-3b13702557c0"]
+}
+]
+*)
+
